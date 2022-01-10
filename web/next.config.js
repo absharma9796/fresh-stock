@@ -10,5 +10,5 @@ module.exports = {
   },
   images: {
     domains: ['assets.myntassets.com'],
-  },
+  }
 }

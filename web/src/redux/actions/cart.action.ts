@@ -20,3 +20,9 @@ export const removeProductCount__action = (productId: string) => {
         payload: { productId }
     }
 }
+
+export const clearCart__action = () => {
+    return {
+        type: CONSTANTS.CART__CLEAR_CART,
+    }
+}

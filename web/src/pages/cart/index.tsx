@@ -1,10 +1,11 @@
+import CartContainer from '@components/cart/CartContainer';
 import AppLayout from '@components/layouts/AppLayout';
-import React from 'react'
+import React from 'react';
 
 const CartPage = () => {
     return (
         <AppLayout>
-            Welcome to your cart
+            <CartContainer />
         </AppLayout>
     )
 }

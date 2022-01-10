@@ -5,8 +5,6 @@ import { Product } from '@dataTypes/product.type';
 import { addProduct__action, decreaseProductCount__action, removeProductCount__action } from '@redux/actions';
 import { useReduxSelector } from '@redux/hooks';
 import { cartList__selector } from '@redux/selectors';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 
@@ -40,14 +38,12 @@ const ProductCard: React.FC<ProductCardProps> = ({
     }
 
     return (
-        <motion.div 
+        <div 
             className='flex flex-col bg-white dark:bg-slate-600 rounded-lg shadow w-full'
             style={{
+                minHeight: "400px",
                 maxWidth: "350px"
             }}
-            // whileHover={{
-            //     scale: 1.05
-            // }}
         >
             <img 
                 width={"100%"}
@@ -121,8 +117,8 @@ const ProductCard: React.FC<ProductCardProps> = ({
                     }
                 </div>
             </div>
-        </motion.div>
+        </div>
     )
 }
 
-export default ProductCard
+export default ProductCard;

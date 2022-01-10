@@ -1,6 +1,7 @@
 export * from './appActions/changeAppLoadingState.action';
 export * from './products.action';
 export * from './cart.action';
+export * from './scrollPosition.action';
 
 //Global App States
 export type AppStateType = keyof typeof __APP_STATES;
@@ -25,6 +26,9 @@ export const CONSTANTS = Object.freeze({
     //CART BASED ACTIONS
     CART__ADD_PRODUCT: 'CART__ADD_PRODUCT',
     CART__DECREASE_PRODUCT_COUNT: 'CART__DECREASE_PRODUCT_COUNT',
-    CART__REMOVE_PRODUCT: 'CART__REMOVE_PRODUCT'
+    CART__REMOVE_PRODUCT: 'CART__REMOVE_PRODUCT',
+    CART__CLEAR_CART: 'CART__CLEAR_CART',
+    //SCROLL POSITION ACTIONS
+    SCROLL__UPDATE_SCROLL_POS: 'SCROLL__UPDATE_SCROLL_POS',
 
 });

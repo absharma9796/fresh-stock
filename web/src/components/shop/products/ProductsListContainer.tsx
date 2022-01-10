@@ -54,7 +54,7 @@ const ProductsListContainer: React.FC<ProductListContainerProps> = ({
     return (
         <div className='flex justify-center w-full p-2 sm:p-10'>
             {
-                !!productsList?.length &&
+                !!productsList?.length ?
                 <InfiniteScroll
                     className='grid w-auto justify-items-center grid-cols-2 gap-2 sm:gap-10'
                     dataLength={productsList?.length}
@@ -93,14 +93,25 @@ const ProductsListContainer: React.FC<ProductListContainerProps> = ({
                     scrollableTarget="scrollable-body-layout"
                 >
                     {
-                        productsList?.map(product => (
+                        productsList?.map((product, index) => (
                             <ProductCard 
-                                key={product?.productId}
+                                key={`${product?.productId}-${index}`}
                                 product={product}
                             />
                         ))
                     }
                 </InfiniteScroll>
+                    :
+                <div className="grid w-auto justify-items-center grid-cols-2 gap-2 sm:gap-10">
+                    <Skeleton 
+                        width={350}
+                        height={450}
+                    />
+                    <Skeleton 
+                        width={350}
+                        height={450}
+                    />
+                </div>
             }
         </div>
     )

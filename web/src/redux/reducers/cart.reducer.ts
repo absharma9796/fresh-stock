@@ -51,6 +51,10 @@ produce(state, draft => {
             }
             break;
         }
+
+        case CONSTANTS.CART__CLEAR_CART: {
+            draft.productsInCartById = {};
+        }
     
         default:
             break;
