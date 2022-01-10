@@ -26,6 +26,7 @@ const ShopProductsContainer = () => {
             <HeroBannner />
             <hr className='w-full border-slate-200 dark:border-slate-600'/>
             <ProductsListContainer />
+            <div className="flex h-80 w-full"></div>
         </div>
     )
 }

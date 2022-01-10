@@ -48,6 +48,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
             <img 
                 width={"100%"}
                 height={"350px"}
+                style={{
+                    minHeight: "200px",
+                }}
                 src={product?.images[0]?.src}
                 className='rounded-t-lg'
             />
