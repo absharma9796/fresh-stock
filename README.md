@@ -37,8 +37,7 @@ All the `source code` related to Frontend can be found inside
 `/web/src` folder
 
 1. `src/component` contains all the components for business logic
-2. `src/dataTypes` contains interfaces / types for base objects, e.g User, Dataset, DataPoint. 
-   as well as actual data files in `json` format e.g. users.json, datasets.json 
+2. `src/dataTypes` contains interfaces / types for base objects
 3. `src/pages` contains all route pages for application
 4. `src/redux` contains all redux related files
 5. `src/utils` contains utility functions
